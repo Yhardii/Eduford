@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+.nav {
+    background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(eduford_img/banner.png);
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+    position: relative;
+}
+
+.navbar ul li {
+    display: inline-block;
+    font-size: 13px;
+    padding: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a img {
+    width: 150px;
+}
+
+
+nav .fa {
+    display: none;
+    color: white;
+}
+
+
+.scrollbar ul li ::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display:block;
+    margin: auto;
+    transition: .5s;
+    
+
+}
+
+.scrollbar ul li:hover ::after{
+    width: 100%;
+}
+
+.text-box {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.text-box h1 {
+    font-size: 62px;
+    
+    color: #fff;
+
+}
+
+.text-box p {
+    margin: 15px 0 60px;
+    font-size: 13px;
+    color: #fff;
+}
+
+.hero-btn {
+    margin-top: 20px;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.5s;
+}
+
+/* ..............................course.......................... */
+
+
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.course h1 {
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.row {
+    display: flex;
+    margin-top: 25px;
+
+    justify-content: space-between;
+}
+
+.course-col {
+    flex-basis: 31%;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 12px;
+    margin-bottom: 5%;
+}
+
+.course-col p {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #777;
+    padding: 10px;
+}
+
+
+/* ........campus.......... */
+
+.campus {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.campus h1 {
+    font-size: 40px;
+}
+
+
+
+.campus-col {
+    flex-basis: 32%;
+    
+    margin-bottom: 30px;
+    position: relative;
+    
+}
+.campus-col img {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.campus p {
+    margin: 15px 0 30px;
+    font-size: 13px;
+    color: #777;
+}
+
+
+.layer {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+
+}
+
+.layer:hover {
+    background-color: rgba(226,0,0,0.7);
+}
+
+
+.layer h3 {
+    font-size: 26px;
+    font-weight: 500;
+    bottom: 0;
+    position: absolute;
+    color: white;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.layer:hover  h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+
+/* -----------------------FACILITIES------------------------- */
+
+.facilities {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+
+.facilities-col {
+    flex-basis: 31%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.facilities h1 {
+    font-size: 40px;
+}
+
+.facilities p {
+    margin: 15px 0 30px;
+    font-size: 13px;
+    color: #777;
+    
+}
+
+.facilities-col h3 {
+    margin: 10px 0 20px;
+}
+
+.facilities-col p {
+    text-align: left;
+    line-height: 22px;
+}
+
+
+.facilities-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* -------testimonials-------- */
+
+.testimonials {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.testimonials p {
+    font-size: 13px;
+    color: #777;
+    
+}
+
+.testimonials h1 {
+    font-size: 40px;
+}
+
+.testimonial-text {
+    margin: 20px 0 40px;
+}
+
+.review {
+    flex-basis: 47%;
+    display: flex;
+    background-color:#fff3f3 ;
+    text-align: left;
+    padding: 25px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    
+}
+
+.review h4 {
+    margin: 10px 0;
+
+}
+.review p {
+    font-size: 13px;
+    color: #777;
+    line-height: 20px;
+   
+    
+}
+
+.review img {
+    height:40px ;
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+
+/* ....................cta.................. */
+
+.cta {
+    margin: 100px auto;
+    color: white;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    padding:100px 0;
+    
+    background-image: linear-gradient(rgba(0,0,0,0.7), 
+    rgba(0,0,0,0.7)), url(eduford_img/banner2.jpg);
+}
+
+.cta h1 {
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+
+
+/* ......................ABOUT  US---------------------------- */
+
+.aboutUs {
+    margin-top: 100px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.aboutUs p {
+    font-size: 13px;
+    color: #777;
+    line-height: 20px;
+    padding: 15px 0;
+}
+
+.icons, .fa-heart {
+    color:#f44336;
+}
+
+.icons .fa{
+    padding: 10px;
+}
+
+
+/* ..........about us.................. */
+
+
+
+
+
+
+/* --------media------------ */
+
+@media(max-width: 700px) {
+    .scrollbar {
+        position: absolute;
+        width: 200px;
+        background: red;
+        right: -300px;
+        top: 0;
+        height: 100vh;
+        padding: 30px;
+        z-index: 2;
+        transition: 1s;
+        
+
+    }
+    .navbar ul li {
+        padding: 15px 0;
+        display: block;
+    }
+
+    nav .fa {
+        display: block;
+        width: 20px;
+        color: #fff;
+        margin-top: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .cta h1 {
+        font-size: 22px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .text-box h1 {
+        font-size: 40px;
+    }
+    .campus h1, .facilities h1, .testimonials h1 {
+        font-size: 35px;
+    }
+
+    
+}   
